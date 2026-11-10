@@ -7,14 +7,17 @@
 #     "event_type": "render-short",
 #     "client_payload": {
 #       "title":  "Black Clover ... | ... Full Fight",
-#       "script": "Kya aap soch sakte ho ki ..."
+#       "script": "Kya aap soch sakte ho ki ...",
+#       "scenes": ["epic anime scene, ...", "..."]   // optional scene prompts
 #     }
 #   }
 #
-# The workflow generates the Hindi voiceover with edge-tts, renders the
-# vertical Short with Remotion, re-encodes it under 5 MB with ffmpeg
-# (so it can pass back through Make's free plan), and uploads the MP4
-# as a workflow artifact named "short-mp4" for the next step to pick up.
+# The workflow generates the Hindi voiceover with edge-tts, downloads one
+# AI scene image per scene prompt (Pollinations, free — scripts/make-images.py;
+# built-in pilot prompts when none are given), renders the vertical Short
+# with Remotion, re-encodes it under 5 MB with ffmpeg (so it can pass back
+# through Make's free plan), and uploads the MP4 as a workflow artifact
+# named "short-mp4" for the next step to pick up.
 
 name: Render Anime Short
 
@@ -30,6 +33,10 @@ on:
         default: 'Black Clover S2 Episode 7 "Beyond Despair" Explained in Hindi | Noelle vs Megicula Full Fight'
       script:
         description: "Voiceover script (plain text)"
+        required: false
+        default: ""
+      scenes:
+        description: "Scene image prompts, one per line"
         required: false
         default: ""
 
@@ -90,17 +97,65 @@ jobs:
       - name: Generate Hindi voiceover (edge-tts, hi-IN-SwaraNeural)
         run: .venv/bin/python scripts/make-voiceover.py script.txt public/voiceover.mp3 hi-IN-SwaraNeural
 
+      - name: Write scene prompts (scenes.json)
+        env:
+          PAYLOAD_SCENES_JSON: ${{ toJSON(github.event.client_payload.scenes) }}
+          INPUT_SCENES: ${{ inputs.scenes }}
+        run: |
+          python3 - <<'EOF'
+          import json, os
+          # Built-in pilot scene prompts (anime-style, descriptive, no studio
+          # frames) used when neither the dispatch payload nor the manual
+          # input supplies prompts.
+          DEFAULT_SCENES = [
+              "epic anime scene, silver-haired girl water mage in ornate dress casting a huge swirling water spell, dramatic battle, cinematic lighting, ultra detailed anime style, vertical composition",
+              "dark anime demon villainess with horns and glowing purple eyes surrounded by cursed chains and dark aura, menacing smile, ultra detailed anime style, vertical composition",
+              "anime magic knights battlefield with clashing spells, blue water magic versus dark curse magic explosion, dynamic action, ultra detailed anime style, vertical composition",
+              "emotional close-up anime girl with tears and determined expression gripping a glowing grimoire, sparkling water droplets around her, ultra detailed anime style, vertical composition",
+              "anime boy with black sword and anti-magic aura standing protectively beside allies, burning battlefield background, ultra detailed anime style, vertical composition",
+              "triumphant anime heroes at sunrise after a magical battle, hopeful sky, sparkling light particles, ultra detailed anime style, vertical composition",
+          ]
+          scenes = None
+          raw = os.environ.get("PAYLOAD_SCENES_JSON", "")
+          if raw and raw != "null":
+              try:
+                  parsed = json.loads(raw)
+              except json.JSONDecodeError:
+                  parsed = None
+              if isinstance(parsed, list):
+                  scenes = [str(p).strip() for p in parsed if str(p).strip()] or None
+          if not scenes:
+              lines = [l.strip() for l in os.environ.get("INPUT_SCENES", "").splitlines() if l.strip()]
+              if lines:
+                  scenes = lines
+          if not scenes:
+              scenes = DEFAULT_SCENES
+          open("scenes.json", "w", encoding="utf-8").write(json.dumps(scenes, ensure_ascii=False, indent=2))
+          print(f"scenes.json written with {len(scenes)} prompt(s)")
+          EOF
+
+      - name: Generate scene images (Pollinations, free)
+        run: .venv/bin/python scripts/make-images.py scenes.json public/scenes
+
       - name: Build Remotion props
         run: |
           python3 - <<'EOF'
-          import json
+          import glob, json, os, re
+          def scene_number(path):
+              m = re.search(r"scene-(\d+)\.jpg$", path)
+              return int(m.group(1)) if m else 0
+          scene_files = [
+              os.path.basename(p)
+              for p in sorted(glob.glob("public/scenes/scene-*.jpg"), key=scene_number)
+          ]
           props = {
               "title": open("title.txt", encoding="utf-8").read(),
               "scriptText": " ".join(l.strip() for l in open("script.txt", encoding="utf-8") if l.strip()),
               "audioFile": "voiceover.mp3",
+              "scenes": scene_files,
           }
           open("props.json", "w", encoding="utf-8").write(json.dumps(props, ensure_ascii=False))
-          print("props.json written")
+          print(f"props.json written with {len(scene_files)} scene(s): {scene_files}")
           EOF
 
       - name: Render the Short with Remotion (1080x1920)

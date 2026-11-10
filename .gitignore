@@ -1,1 +1,8 @@
-bm9kZV9tb2R1bGVzLwoudmVudi8Kb3V0LwoqLmxvZwouRFNfU3RvcmUKIyBHZW5lcmF0ZWQgcGVyIHJlbmRlciAoa2VwdCBsb2NhbGx5IGZvciB0aGUgcGlsb3QgcHJvb2YsIHJlZ2VuZXJhdGVkIGluIENJKQpwdWJsaWMvdm9pY2VvdmVyLm1wMwpwdWJsaWMvdm9pY2VvdmVyLnNydAo=
+node_modules/
+.venv/
+out/
+*.log
+.DS_Store
+# Generated per render (kept locally for the pilot proof, regenerated in CI)
+public/voiceover.mp3
+public/voiceover.srt

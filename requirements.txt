@@ -1,1 +1,2 @@
-ZWRnZS10dHM+PTcuMgp3ZWJzb2NrZXRzPj0xNAo=
+edge-tts>=7.2
+websockets>=14

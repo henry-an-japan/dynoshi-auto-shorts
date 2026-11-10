@@ -18,6 +18,21 @@
 # with Remotion, re-encodes it under 5 MB with ffmpeg (so it can pass back
 # through Make's free plan), and uploads the MP4 as a workflow artifact
 # named "short-mp4" for the next step to pick up.
+#
+# Direct publish (added on top of the artifact upload):
+#   The re-encoded MP4 is also uploaded as the "short.mp4" asset of the
+#   fixed GitHub Release tagged "daily-latest" (created on first use,
+#   overwritten with --clobber on every run), giving it a stable public
+#   direct-download URL:
+#     https://github.com/henry-an-japan/dynoshi-auto-shorts/releases/download/daily-latest/short.mp4
+#   Afterwards, if the repository secret MAKE_WEBHOOK_URL is set, the
+#   workflow POSTs a JSON payload ({title, video_url, run_id}, plus
+#   description/tags when they arrived in the dispatch client_payload —
+#   or, for manual runs, in the workflow_dispatch "description" and
+#   "tags" (comma-separated) inputs) to that Make.com webhook so Make
+#   can fetch the file and upload it to YouTube. When the secret is empty the webhook step is skipped quietly.
+#   Publishing the release asset is why the workflow needs
+#   "permissions: contents: write".
 
 name: Render Anime Short
 
@@ -39,9 +54,17 @@ on:
         description: "Scene image prompts, one per line"
         required: false
         default: ""
+      description:
+        description: "Video description (forwarded to the Make webhook)"
+        required: false
+        default: ""
+      tags:
+        description: "Video tags, comma-separated (forwarded to the Make webhook)"
+        required: false
+        default: ""
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   render:
@@ -181,6 +204,62 @@ jobs:
             echo "::error::short.mp4 is still >= 5 MB ($SIZE bytes)"
             exit 1
           fi
+
+      - name: Publish MP4 as release asset (direct link)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view daily-latest >/dev/null 2>&1 || gh release create daily-latest --title "Latest rendered Short" --notes "Auto-published by the DYNOSHI render workflow"
+          gh release upload daily-latest out/short.mp4 --clobber
+          echo "Published: https://github.com/${{ github.repository }}/releases/download/daily-latest/short.mp4"
+
+      - name: Notify Make webhook (if configured)
+        env:
+          MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
+          RUN_ID: ${{ github.run_id }}
+          PAYLOAD_DESCRIPTION: ${{ github.event.client_payload.description }}
+          PAYLOAD_TAGS: ${{ toJSON(github.event.client_payload.tags) }}
+          INPUT_DESCRIPTION: ${{ inputs.description }}
+          INPUT_TAGS: ${{ inputs.tags }}
+        run: |
+          if [ -z "$MAKE_WEBHOOK_URL" ]; then
+            echo "webhook not configured, skipping"
+            exit 0
+          fi
+          python3 - <<'EOF'
+          import json, os
+          props = json.load(open("props.json", encoding="utf-8"))
+          payload = {
+              "title": props.get("title", ""),
+              "video_url": "https://github.com/henry-an-japan/dynoshi-auto-shorts/releases/download/daily-latest/short.mp4",
+              "run_id": os.environ["RUN_ID"],
+          }
+          # Merge SEO fields: the dispatch client_payload wins; the
+          # workflow_dispatch inputs are the fallback.
+          desc = os.environ.get("PAYLOAD_DESCRIPTION", "")
+          if not desc:
+              desc = os.environ.get("INPUT_DESCRIPTION", "")
+          if desc:
+              payload["description"] = desc
+          tags = None
+          raw_tags = os.environ.get("PAYLOAD_TAGS", "")
+          if raw_tags and raw_tags != "null":
+              try:
+                  parsed_tags = json.loads(raw_tags)
+              except json.JSONDecodeError:
+                  parsed_tags = None
+              if isinstance(parsed_tags, list):
+                  tags = parsed_tags
+          if tags is None:
+              input_tags = [t.strip() for t in os.environ.get("INPUT_TAGS", "").split(",")]
+              tags = [t for t in input_tags if t] or None
+          if tags is not None:
+              payload["tags"] = tags
+          open("payload.json", "w", encoding="utf-8").write(json.dumps(payload, ensure_ascii=False))
+          print("payload.json:", payload)
+          EOF
+          curl -s -X POST "$MAKE_WEBHOOK_URL" -H 'Content-Type: application/json' -d @payload.json
+          echo "Make webhook notified."
 
       - name: Upload the finished Short as an artifact
         uses: actions/upload-artifact@v4

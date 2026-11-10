@@ -1,1 +1,4 @@
-aW1wb3J0IHtyZWdpc3RlclJvb3R9IGZyb20gJ3JlbW90aW9uJzsKaW1wb3J0IHtSZW1vdGlvblJvb3R9IGZyb20gJy4vUm9vdCc7CgpyZWdpc3RlclJvb3QoUmVtb3Rpb25Sb290KTsK
+import {registerRoot} from 'remotion';
+import {RemotionRoot} from './Root';
+
+registerRoot(RemotionRoot);

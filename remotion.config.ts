@@ -1,1 +1,6 @@
-aW1wb3J0IHtDb25maWd9IGZyb20gJ0ByZW1vdGlvbi9jbGkvY29uZmlnJzsKCi8vIEguMjY0IE1QNCBvdXRwdXQ7IG92ZXJ3cml0ZSByZW5kZXJzIG9mIHRoZSBzYW1lIG5hbWUuCkNvbmZpZy5zZXRWaWRlb0ltYWdlRm9ybWF0KCdqcGVnJyk7CkNvbmZpZy5zZXRPdmVyd3JpdGVPdXRwdXQodHJ1ZSk7CkNvbmZpZy5zZXRDaHJvbWl1bU9wZW5HbFJlbmRlcmVyKCdhbmdsZScpOwo=
+import {Config} from '@remotion/cli/config';
+
+// H.264 MP4 output; overwrite renders of the same name.
+Config.setVideoImageFormat('jpeg');
+Config.setOverwriteOutput(true);
+Config.setChromiumOpenGlRenderer('angle');

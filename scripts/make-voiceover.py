@@ -1,1 +1,158 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJHZW5lcmF0ZSB0aGUgSGluZGkgdm9pY2VvdmVyIE1QMyB3aXRoIE1pY3Jvc29mdCBFZGdlIFRUUyAoZnJlZSwgbm8gYWNjb3VudCkuCgpVc2FnZToKICAgIHB5dGhvbiBzY3JpcHRzL21ha2Utdm9pY2VvdmVyLnB5IFtzY3JpcHQudHh0XSBbb3V0Lm1wM10gW3ZvaWNlXQoKRGVmYXVsdHM6IHNjcmlwdCA9IHBpbG90LXNjcmlwdC50eHQsIG91dCA9IHB1YmxpYy92b2ljZW92ZXIubXAzLAp2b2ljZSA9IGhpLUlOLVN3YXJhTmV1cmFsIChmZW1hbGUpLiBBbHRlcm5hdGl2ZTogaGktSU4tTWFkaHVyTmV1cmFsIChtYWxlKS4KQWxzbyB3cml0ZXMgYSAuc3J0IHdvcmQtdGltaW5nIGZpbGUgbmV4dCB0byB0aGUgTVAzIChoYW5keSBmb3IgZGVidWdnaW5nIHN5bmM7CnRoZSBSZW1vdGlvbiBjb21wb3NpdGlvbiBkb2VzIGl0cyBvd24gY2FwdGlvbiB0aW1pbmcpLgoKVHJhbnNwb3J0IG5vdGU6IHRoaXMgdGFsa3MgdG8gdGhlIEVkZ2UgVFRTIFdlYlNvY2tldCBkaXJlY3RseSB3aXRoIHRoZQpgd2Vic29ja2V0c2AgbGlicmFyeSwgcmV1c2luZyBlZGdlLXR0cycgb3duIGhlbHBlcnMgZm9yIHRoZSBTZWMtTVMtR0VDIHRva2VuLApyZXF1ZXN0IGhlYWRlcnMgYW5kIFNTTUwuIFJlYXNvbjogZWRnZS10dHMnIGFpb2h0dHAgdHJhbnNwb3J0IGZhaWxzIGJlaGluZApzb21lIEhUVFAgZWdyZXNzIHByb3hpZXMgKCIxMDEgSW52YWxpZCBjb25uZWN0aW9uIGhlYWRlciIgb24gdGhlIFdTIHVwZ3JhZGUpLAp3aGlsZSB0aGUgcGxhaW4gYHdlYnNvY2tldHNgIGNsaWVudCBwYXNzZXMgdGhlIHNhbWUgcHJveGllcyBjbGVhbmx5LiBPbiBhCm5vcm1hbCBvcGVuIG5ldHdvcmsgKGUuZy4gR2l0SHViIEFjdGlvbnMpIGJvdGggd29yazsgdGhpcyBvbmUgd29ya3MgaW4gYm90aC4KIiIiCmltcG9ydCBhc3luY2lvCmltcG9ydCBqc29uCmltcG9ydCBvcwppbXBvcnQgc3NsIGFzIHNzbF9saWIKaW1wb3J0IHN5cwpmcm9tIGh0bWwgaW1wb3J0IGVzY2FwZSwgdW5lc2NhcGUKZnJvbSBwYXRobGliIGltcG9ydCBQYXRoCgpmcm9tIGVkZ2VfdHRzIGltcG9ydCBTdWJNYWtlcgpmcm9tIGVkZ2VfdHRzLmNvbW11bmljYXRlIGltcG9ydCAoCiAgICBUVFNDb25maWcsCiAgICBjb25uZWN0X2lkLAogICAgZGF0ZV90b19zdHJpbmcsCiAgICBnZXRfaGVhZGVyc19hbmRfZGF0YSwKICAgIG1rc3NtbCwKICAgIHJlbW92ZV9pbmNvbXBhdGlibGVfY2hhcmFjdGVycywKICAgIHNwbGl0X3RleHRfYnlfYnl0ZV9sZW5ndGgsCiAgICBzc21sX2hlYWRlcnNfcGx1c19kYXRhLAopCmZyb20gZWRnZV90dHMuY29uc3RhbnRzIGltcG9ydCBTRUNfTVNfR0VDX1ZFUlNJT04sIFRJQ0tTX1BFUl9TRUNPTkQsIFdTU19IRUFERVJTLCBXU1NfVVJMCmZyb20gZWRnZV90dHMuZHJtIGltcG9ydCBEUk0KZnJvbSB3ZWJzb2NrZXRzLmFzeW5jaW8uY2xpZW50IGltcG9ydCBjb25uZWN0CgpST09UID0gUGF0aChfX2ZpbGVfXykucmVzb2x2ZSgpLnBhcmVudC5wYXJlbnQKTVAzX0JJVFJBVEVfQlBTID0gNDhfMDAwICAjIGVkZ2UtdHRzIG91dHB1dCBmb3JtYXQ6IGF1ZGlvLTI0a2h6LTQ4a2JpdHJhdGUtbW9uby1tcDMKCgpkZWYgX3NzbF9jb250ZXh0KCkgLT4gc3NsX2xpYi5TU0xDb250ZXh0OgogICAgIyBIb25vdXIgYW4gZW52aXJvbm1lbnQgQ0EgYnVuZGxlIChlLmcuIGFuIGVncmVzcy1wcm94eSBDQSBpbiBTU0xfQ0VSVF9GSUxFKTsKICAgICMgZWRnZS10dHMnIG93biBoYXJkY29kZWQgY2VydGlmaSBjb250ZXh0IHdvdWxkIG5vdCB0cnVzdCBzdWNoIGEgQ0EuCiAgICBjYWZpbGUgPSBvcy5lbnZpcm9uLmdldCgiU1NMX0NFUlRfRklMRSIpCiAgICBpZiBjYWZpbGUgYW5kIFBhdGgoY2FmaWxlKS5leGlzdHMoKToKICAgICAgICByZXR1cm4gc3NsX2xpYi5jcmVhdGVfZGVmYXVsdF9jb250ZXh0KGNhZmlsZT1jYWZpbGUpCiAgICByZXR1cm4gc3NsX2xpYi5jcmVhdGVfZGVmYXVsdF9jb250ZXh0KCkKCgpkZWYgX3Byb3h5KCkgLT4gc3RyIHwgTm9uZToKICAgIHJldHVybiAoCiAgICAgICAgb3MuZW52aXJvbi5nZXQoImh0dHBzX3Byb3h5IikKICAgICAgICBvciBvcy5lbnZpcm9uLmdldCgiSFRUUFNfUFJPWFkiKQogICAgICAgIG9yIG9zLmVudmlyb24uZ2V0KCJodHRwX3Byb3h5IikKICAgICAgICBvciBvcy5lbnZpcm9uLmdldCgiSFRUUF9QUk9YWSIpCiAgICApCgoKYXN5bmMgZGVmIF9zeW50aGVzaXNlKHRleHQ6IHN0ciwgdm9pY2U6IHN0ciwgb3V0X3BhdGg6IFBhdGgpIC0+IE5vbmU6CiAgICBjZmcgPSBUVFNDb25maWcodm9pY2UsICIrMCUiLCAiKzAlIiwgIiswSHoiLCAiV29yZEJvdW5kYXJ5IikKICAgIGNodW5rcyA9IHNwbGl0X3RleHRfYnlfYnl0ZV9sZW5ndGgoZXNjYXBlKHJlbW92ZV9pbmNvbXBhdGlibGVfY2hhcmFjdGVycyh0ZXh0KSksIDQwOTYpCgogICAgdXJsID0gKAogICAgICAgIGYie1dTU19VUkx9JkNvbm5lY3Rpb25JZD17Y29ubmVjdF9pZCgpfSIKICAgICAgICBmIiZTZWMtTVMtR0VDPXtEUk0uZ2VuZXJhdGVfc2VjX21zX2dlYygpfSIKICAgICAgICBmIiZTZWMtTVMtR0VDLVZlcnNpb249e1NFQ19NU19HRUNfVkVSU0lPTn0iCiAgICApCiAgICBzdWJtYWtlciA9IFN1Yk1ha2VyKCkKICAgIGF1ZGlvID0gYnl0ZWFycmF5KCkKICAgIG9mZnNldF9jb21wZW5zYXRpb24gPSAwICAjIHRpY2tzOyBncm93cyB3aXRoIENCUiBhdWRpbyBieXRlcyBhY3Jvc3MgY2h1bmtzCgogICAgIyBXU1NfSEVBREVSUyBjb250YWlucyAiU2VjLVdlYlNvY2tldC1WZXJzaW9uIiwgd2hpY2ggdGhlIHdlYnNvY2tldHMKICAgICMgbGlicmFyeSBzZW5kcyBpdHNlbGYg4oCUIHBhc3NpbmcgaXQgYWdhaW4gbWFrZXMgTWljcm9zb2Z0IHJlamVjdCB0aGUKICAgICMgaGFuZHNoYWtlIHdpdGggSFRUUCA0MDAsIHNvIGRyb3AgaXQgaGVyZS4KICAgIGhlYWRlcnMgPSBEUk0uaGVhZGVyc193aXRoX211aWQoV1NTX0hFQURFUlMpCiAgICBoZWFkZXJzLnBvcCgiU2VjLVdlYlNvY2tldC1WZXJzaW9uIiwgTm9uZSkKCiAgICBhc3luYyB3aXRoIGNvbm5lY3QoCiAgICAgICAgdXJsLAogICAgICAgIGFkZGl0aW9uYWxfaGVhZGVycz1oZWFkZXJzLAogICAgICAgIHNzbD1fc3NsX2NvbnRleHQoKSwKICAgICAgICBwcm94eT1fcHJveHkoKSwKICAgICAgICBvcGVuX3RpbWVvdXQ9MzAsCiAgICAgICAgY2xvc2VfdGltZW91dD0xMCwKICAgICkgYXMgd3M6CiAgICAgICAgIyBzcGVlY2guY29uZmlnOiB3b3JkIGJvdW5kYXJpZXMgb24sIHNlbnRlbmNlIGJvdW5kYXJpZXMgb2ZmLgogICAgICAgIGF3YWl0IHdzLnNlbmQoCiAgICAgICAgICAgIGYiWC1UaW1lc3RhbXA6e2RhdGVfdG9fc3RyaW5nKCl9XHJcbiIKICAgICAgICAgICAgIkNvbnRlbnQtVHlwZTphcHBsaWNhdGlvbi9qc29uOyBjaGFyc2V0PXV0Zi04XHJcbiIKICAgICAgICAgICAgIlBhdGg6c3BlZWNoLmNvbmZpZ1xyXG5cclxuIgogICAgICAgICAgICAneyJjb250ZXh0Ijp7InN5bnRoZXNpcyI6eyJhdWRpbyI6eyJtZXRhZGF0YW9wdGlvbnMiOnsnCiAgICAgICAgICAgICcic2VudGVuY2VCb3VuZGFyeUVuYWJsZWQiOiJmYWxzZSIsIndvcmRCb3VuZGFyeUVuYWJsZWQiOiJ0cnVlIicKICAgICAgICAgICAgJ30sIm91dHB1dEZvcm1hdCI6ImF1ZGlvLTI0a2h6LTQ4a2JpdHJhdGUtbW9uby1tcDMifX19fVxyXG4nCiAgICAgICAgKQoKICAgICAgICBmb3IgcGFydGlhbCBpbiBjaHVua3M6CiAgICAgICAgICAgIGF3YWl0IHdzLnNlbmQoc3NtbF9oZWFkZXJzX3BsdXNfZGF0YShjb25uZWN0X2lkKCksIGRhdGVfdG9fc3RyaW5nKCksIG1rc3NtbChjZmcsIHBhcnRpYWwpKSkKICAgICAgICAgICAgY2h1bmtfYnl0ZXMgPSAwCiAgICAgICAgICAgIHdoaWxlIFRydWU6CiAgICAgICAgICAgICAgICBtc2cgPSBhd2FpdCBhc3luY2lvLndhaXRfZm9yKHdzLnJlY3YoKSwgdGltZW91dD02MCkKICAgICAgICAgICAgICAgIGlmIGlzaW5zdGFuY2UobXNnLCBzdHIpOgogICAgICAgICAgICAgICAgICAgIHJhdyA9IG1zZy5lbmNvZGUoInV0Zi04IikKICAgICAgICAgICAgICAgICAgICBwYXJhbXMsIGRhdGEgPSBnZXRfaGVhZGVyc19hbmRfZGF0YShyYXcsIHJhdy5maW5kKGIiXHJcblxyXG4iKSkKICAgICAgICAgICAgICAgICAgICBwYXRoID0gcGFyYW1zLmdldChiIlBhdGgiKQogICAgICAgICAgICAgICAgICAgIGlmIHBhdGggPT0gYiJhdWRpby5tZXRhZGF0YSI6CiAgICAgICAgICAgICAgICAgICAgICAgIGZvciBtZXRhIGluIGpzb24ubG9hZHMoZGF0YSlbIk1ldGFkYXRhIl06CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBpZiBtZXRhWyJUeXBlIl0gPT0gIldvcmRCb3VuZGFyeSI6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc3VibWFrZXIuZmVlZCgKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInR5cGUiOiAiV29yZEJvdW5kYXJ5IiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJvZmZzZXQiOiBtZXRhWyJEYXRhIl1bIk9mZnNldCJdICsgb2Zmc2V0X2NvbXBlbnNhdGlvbiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJkdXJhdGlvbiI6IG1ldGFbIkRhdGEiXVsiRHVyYXRpb24iXSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ0ZXh0IjogdW5lc2NhcGUobWV0YVsiRGF0YSJdWyJ0ZXh0Il1bIlRleHQiXSksCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICAgICAgZWxpZiBwYXRoID09IGIidHVybi5lbmQiOgogICAgICAgICAgICAgICAgICAgICAgICBicmVhawogICAgICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgICAgICBpZiBsZW4obXNnKSA8IDI6CiAgICAgICAgICAgICAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgICAgICAgICAgICAgaGVhZGVyX2xlbiA9IGludC5mcm9tX2J5dGVzKG1zZ1s6Ml0sICJiaWciKQogICAgICAgICAgICAgICAgICAgIHBhcmFtcywgZGF0YSA9IGdldF9oZWFkZXJzX2FuZF9kYXRhKG1zZywgaGVhZGVyX2xlbikKICAgICAgICAgICAgICAgICAgICBpZiBwYXJhbXMuZ2V0KGIiUGF0aCIpID09IGIiYXVkaW8iIGFuZCBkYXRhOgogICAgICAgICAgICAgICAgICAgICAgICBhdWRpby5leHRlbmQoZGF0YSkKICAgICAgICAgICAgICAgICAgICAgICAgY2h1bmtfYnl0ZXMgKz0gbGVuKGRhdGEpCiAgICAgICAgICAgICMgQ0JSIGNvbXBlbnNhdGlvbiBzbyB3b3JkIHRpbWluZ3Mgc3RheSByaWdodCBhY3Jvc3MgY2h1bmtzLgogICAgICAgICAgICBvZmZzZXRfY29tcGVuc2F0aW9uICs9IGNodW5rX2J5dGVzICogOCAqIFRJQ0tTX1BFUl9TRUNPTkQgLy8gTVAzX0JJVFJBVEVfQlBTCgogICAgaWYgbm90IGF1ZGlvOgogICAgICAgIHJhaXNlIFJ1bnRpbWVFcnJvcigiTm8gYXVkaW8gcmVjZWl2ZWQgZnJvbSBFZGdlIFRUUyIpCgogICAgb3V0X3BhdGgucGFyZW50Lm1rZGlyKHBhcmVudHM9VHJ1ZSwgZXhpc3Rfb2s9VHJ1ZSkKICAgIG91dF9wYXRoLndyaXRlX2J5dGVzKGJ5dGVzKGF1ZGlvKSkKICAgIHNydF9wYXRoID0gb3V0X3BhdGgud2l0aF9zdWZmaXgoIi5zcnQiKQogICAgc3J0X3BhdGgud3JpdGVfdGV4dChzdWJtYWtlci5nZXRfc3J0KCksIGVuY29kaW5nPSJ1dGYtOCIpCiAgICBwcmludChmInZvaWNlPXt2b2ljZX0iKQogICAgcHJpbnQoZiJhdWRpbz17b3V0X3BhdGh9ICh7b3V0X3BhdGguc3RhdCgpLnN0X3NpemV9IGJ5dGVzKSIpCiAgICBwcmludChmInN1YnM9e3NydF9wYXRofSIpCgoKYXN5bmMgZGVmIG1haW4oKSAtPiBOb25lOgogICAgc2NyaXB0X3BhdGggPSBQYXRoKHN5cy5hcmd2WzFdKSBpZiBsZW4oc3lzLmFyZ3YpID4gMSBlbHNlIFJPT1QgLyAicGlsb3Qtc2NyaXB0LnR4dCIKICAgIG91dF9wYXRoID0gUGF0aChzeXMuYXJndlsyXSkgaWYgbGVuKHN5cy5hcmd2KSA+IDIgZWxzZSBST09UIC8gInB1YmxpYyIgLyAidm9pY2VvdmVyLm1wMyIKICAgIHZvaWNlID0gc3lzLmFyZ3ZbM10gaWYgbGVuKHN5cy5hcmd2KSA+IDMgZWxzZSAiaGktSU4tU3dhcmFOZXVyYWwiCgogICAgdGV4dCA9IHNjcmlwdF9wYXRoLnJlYWRfdGV4dChlbmNvZGluZz0idXRmLTgiKS5zdHJpcCgpCiAgICAjIFJlYWQgcGFyYWdyYXBocyBhcyBjb250aW51b3VzIHByb3NlLgogICAgdGV4dCA9ICIgIi5qb2luKGxpbmUuc3RyaXAoKSBmb3IgbGluZSBpbiB0ZXh0LnNwbGl0bGluZXMoKSBpZiBsaW5lLnN0cmlwKCkpCiAgICBhd2FpdCBfc3ludGhlc2lzZSh0ZXh0LCB2b2ljZSwgb3V0X3BhdGgpCgoKaWYgX19uYW1lX18gPT0gIl9fbWFpbl9fIjoKICAgIGFzeW5jaW8ucnVuKG1haW4oKSkK
+#!/usr/bin/env python3
+"""Generate the Hindi voiceover MP3 with Microsoft Edge TTS (free, no account).
+
+Usage:
+    python scripts/make-voiceover.py [script.txt] [out.mp3] [voice]
+
+Defaults: script = pilot-script.txt, out = public/voiceover.mp3,
+voice = hi-IN-SwaraNeural (female). Alternative: hi-IN-MadhurNeural (male).
+Also writes a .srt word-timing file next to the MP3 (handy for debugging sync;
+the Remotion composition does its own caption timing).
+
+Transport note: this talks to the Edge TTS WebSocket directly with the
+`websockets` library, reusing edge-tts' own helpers for the Sec-MS-GEC token,
+request headers and SSML. Reason: edge-tts' aiohttp transport fails behind
+some HTTP egress proxies ("101 Invalid connection header" on the WS upgrade),
+while the plain `websockets` client passes the same proxies cleanly. On a
+normal open network (e.g. GitHub Actions) both work; this one works in both.
+"""
+import asyncio
+import json
+import os
+import ssl as ssl_lib
+import sys
+from html import escape, unescape
+from pathlib import Path
+
+from edge_tts import SubMaker
+from edge_tts.communicate import (
+    TTSConfig,
+    connect_id,
+    date_to_string,
+    get_headers_and_data,
+    mkssml,
+    remove_incompatible_characters,
+    split_text_by_byte_length,
+    ssml_headers_plus_data,
+)
+from edge_tts.constants import SEC_MS_GEC_VERSION, TICKS_PER_SECOND, WSS_HEADERS, WSS_URL
+from edge_tts.drm import DRM
+from websockets.asyncio.client import connect
+
+ROOT = Path(__file__).resolve().parent.parent
+MP3_BITRATE_BPS = 48_000  # edge-tts output format: audio-24khz-48kbitrate-mono-mp3
+
+
+def _ssl_context() -> ssl_lib.SSLContext:
+    # Honour an environment CA bundle (e.g. an egress-proxy CA in SSL_CERT_FILE);
+    # edge-tts' own hardcoded certifi context would not trust such a CA.
+    cafile = os.environ.get("SSL_CERT_FILE")
+    if cafile and Path(cafile).exists():
+        return ssl_lib.create_default_context(cafile=cafile)
+    return ssl_lib.create_default_context()
+
+
+def _proxy() -> str | None:
+    return (
+        os.environ.get("https_proxy")
+        or os.environ.get("HTTPS_PROXY")
+        or os.environ.get("http_proxy")
+        or os.environ.get("HTTP_PROXY")
+    )
+
+
+async def _synthesise(text: str, voice: str, out_path: Path) -> None:
+    cfg = TTSConfig(voice, "+0%", "+0%", "+0Hz", "WordBoundary")
+    chunks = split_text_by_byte_length(escape(remove_incompatible_characters(text)), 4096)
+
+    url = (
+        f"{WSS_URL}&ConnectionId={connect_id()}"
+        f"&Sec-MS-GEC={DRM.generate_sec_ms_gec()}"
+        f"&Sec-MS-GEC-Version={SEC_MS_GEC_VERSION}"
+    )
+    submaker = SubMaker()
+    audio = bytearray()
+    offset_compensation = 0  # ticks; grows with CBR audio bytes across chunks
+
+    # WSS_HEADERS contains "Sec-WebSocket-Version", which the websockets
+    # library sends itself — passing it again makes Microsoft reject the
+    # handshake with HTTP 400, so drop it here.
+    headers = DRM.headers_with_muid(WSS_HEADERS)
+    headers.pop("Sec-WebSocket-Version", None)
+
+    async with connect(
+        url,
+        additional_headers=headers,
+        ssl=_ssl_context(),
+        proxy=_proxy(),
+        open_timeout=30,
+        close_timeout=10,
+    ) as ws:
+        # speech.config: word boundaries on, sentence boundaries off.
+        await ws.send(
+            f"X-Timestamp:{date_to_string()}\r\n"
+            "Content-Type:application/json; charset=utf-8\r\n"
+            "Path:speech.config\r\n\r\n"
+            '{"context":{"synthesis":{"audio":{"metadataoptions":{'
+            '"sentenceBoundaryEnabled":"false","wordBoundaryEnabled":"true"'
+            '},"outputFormat":"audio-24khz-48kbitrate-mono-mp3"}}}}\r\n'
+        )
+
+        for partial in chunks:
+            await ws.send(ssml_headers_plus_data(connect_id(), date_to_string(), mkssml(cfg, partial)))
+            chunk_bytes = 0
+            while True:
+                msg = await asyncio.wait_for(ws.recv(), timeout=60)
+                if isinstance(msg, str):
+                    raw = msg.encode("utf-8")
+                    params, data = get_headers_and_data(raw, raw.find(b"\r\n\r\n"))
+                    path = params.get(b"Path")
+                    if path == b"audio.metadata":
+                        for meta in json.loads(data)["Metadata"]:
+                            if meta["Type"] == "WordBoundary":
+                                submaker.feed(
+                                    {
+                                        "type": "WordBoundary",
+                                        "offset": meta["Data"]["Offset"] + offset_compensation,
+                                        "duration": meta["Data"]["Duration"],
+                                        "text": unescape(meta["Data"]["text"]["Text"]),
+                                    }
+                                )
+                    elif path == b"turn.end":
+                        break
+                else:
+                    if len(msg) < 2:
+                        continue
+                    header_len = int.from_bytes(msg[:2], "big")
+                    params, data = get_headers_and_data(msg, header_len)
+                    if params.get(b"Path") == b"audio" and data:
+                        audio.extend(data)
+                        chunk_bytes += len(data)
+            # CBR compensation so word timings stay right across chunks.
+            offset_compensation += chunk_bytes * 8 * TICKS_PER_SECOND // MP3_BITRATE_BPS
+
+    if not audio:
+        raise RuntimeError("No audio received from Edge TTS")
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_bytes(bytes(audio))
+    srt_path = out_path.with_suffix(".srt")
+    srt_path.write_text(submaker.get_srt(), encoding="utf-8")
+    print(f"voice={voice}")
+    print(f"audio={out_path} ({out_path.stat().st_size} bytes)")
+    print(f"subs={srt_path}")
+
+
+async def main() -> None:
+    script_path = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "pilot-script.txt"
+    out_path = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / "public" / "voiceover.mp3"
+    voice = sys.argv[3] if len(sys.argv) > 3 else "hi-IN-SwaraNeural"
+
+    text = script_path.read_text(encoding="utf-8").strip()
+    # Read paragraphs as continuous prose.
+    text = " ".join(line.strip() for line in text.splitlines() if line.strip())
+    await _synthesise(text, voice, out_path)
+
+
+if __name__ == "__main__":
+    asyncio.run(main())

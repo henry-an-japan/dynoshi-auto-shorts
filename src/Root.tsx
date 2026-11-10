@@ -1,1 +1,37 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHtDb21wb3NpdGlvbiwgc3RhdGljRmlsZX0gZnJvbSAncmVtb3Rpb24nOwppbXBvcnQge2dldEF1ZGlvRHVyYXRpb25JblNlY29uZHN9IGZyb20gJ0ByZW1vdGlvbi9tZWRpYS11dGlscyc7CmltcG9ydCB7QW5pbWVTaG9ydCwgQW5pbWVTaG9ydFByb3BzfSBmcm9tICcuL0FuaW1lU2hvcnQnOwoKZXhwb3J0IGNvbnN0IEZQUyA9IDMwOwpleHBvcnQgY29uc3QgV0lEVEggPSAxMDgwOyAvLyBwcm9kdWN0aW9uIHJlbmRlcjsgbG9jYWwgcHJvb2YgcmVuZGVycyB1c2UgLS1zY2FsZT0wLjY2Njcg4oaSIDcyMHgxMjgwCmV4cG9ydCBjb25zdCBIRUlHSFQgPSAxOTIwOwoKZXhwb3J0IGNvbnN0IGRlZmF1bHRQaWxvdFByb3BzOiBBbmltZVNob3J0UHJvcHMgPSB7CiAgdGl0bGU6ICdCbGFjayBDbG92ZXIgUzIgRXBpc29kZSA3ICJCZXlvbmQgRGVzcGFpciIgRXhwbGFpbmVkIGluIEhpbmRpIHwgTm9lbGxlIHZzIE1lZ2ljdWxhIEZ1bGwgRmlnaHQnLAogIHNjcmlwdFRleHQ6CiAgICAnS3lhIGFhcCBzb2NoIHNha3RlIGhvIGtpIGVrIGluc2FhbiBhcG5pIHNhYnNlIGJhZGkgdGFrbGVlZiBrZSBzYWFtbmUgYmhpIHJ1ayBqYWF5ZT8gTm9lbGxlIG5lIGFhaiB3YWhpIGthciBkaWtoYXlhIGhhaS4nLAogIGF1ZGlvRmlsZTogJ3ZvaWNlb3Zlci5tcDMnLAp9OwoKZXhwb3J0IGNvbnN0IFJlbW90aW9uUm9vdDogUmVhY3QuRkMgPSAoKSA9PiB7CiAgcmV0dXJuICgKICAgIDxDb21wb3NpdGlvbgogICAgICBpZD0iQW5pbWVTaG9ydCIKICAgICAgY29tcG9uZW50PXtBbmltZVNob3J0fQogICAgICBkdXJhdGlvbkluRnJhbWVzPXtGUFMgKiA2MH0KICAgICAgZnBzPXtGUFN9CiAgICAgIHdpZHRoPXtXSURUSH0KICAgICAgaGVpZ2h0PXtIRUlHSFR9CiAgICAgIGRlZmF1bHRQcm9wcz17ZGVmYXVsdFBpbG90UHJvcHN9CiAgICAgIGNhbGN1bGF0ZU1ldGFkYXRhPXthc3luYyAoe3Byb3BzfSkgPT4gewogICAgICAgIC8vIENvbXBvc2l0aW9uIGxlbmd0aCBmb2xsb3dzIHRoZSBnZW5lcmF0ZWQgdm9pY2VvdmVyIGV4YWN0bHkgKCsxcyB0YWlsKS4KICAgICAgICBjb25zdCBhdWRpb1NlY29uZHMgPSBhd2FpdCBnZXRBdWRpb0R1cmF0aW9uSW5TZWNvbmRzKHN0YXRpY0ZpbGUocHJvcHMuYXVkaW9GaWxlKSk7CiAgICAgICAgcmV0dXJuIHsKICAgICAgICAgIGR1cmF0aW9uSW5GcmFtZXM6IE1hdGguY2VpbChhdWRpb1NlY29uZHMgKiBGUFMpICsgRlBTLAogICAgICAgICAgcHJvcHMsCiAgICAgICAgfTsKICAgICAgfX0KICAgIC8+CiAgKTsKfTsK
+import React from 'react';
+import {Composition, staticFile} from 'remotion';
+import {getAudioDurationInSeconds} from '@remotion/media-utils';
+import {AnimeShort, AnimeShortProps} from './AnimeShort';
+
+export const FPS = 30;
+export const WIDTH = 1080; // production render; local proof renders use --scale=0.6667 → 720x1280
+export const HEIGHT = 1920;
+
+export const defaultPilotProps: AnimeShortProps = {
+  title: 'Black Clover S2 Episode 7 "Beyond Despair" Explained in Hindi | Noelle vs Megicula Full Fight',
+  scriptText:
+    'Kya aap soch sakte ho ki ek insaan apni sabse badi takleef ke saamne bhi ruk jaaye? Noelle ne aaj wahi kar dikhaya hai.',
+  audioFile: 'voiceover.mp3',
+};
+
+export const RemotionRoot: React.FC = () => {
+  return (
+    <Composition
+      id="AnimeShort"
+      component={AnimeShort}
+      durationInFrames={FPS * 60}
+      fps={FPS}
+      width={WIDTH}
+      height={HEIGHT}
+      defaultProps={defaultPilotProps}
+      calculateMetadata={async ({props}) => {
+        // Composition length follows the generated voiceover exactly (+1s tail).
+        const audioSeconds = await getAudioDurationInSeconds(staticFile(props.audioFile));
+        return {
+          durationInFrames: Math.ceil(audioSeconds * FPS) + FPS,
+          props,
+        };
+      }}
+    />
+  );
+};

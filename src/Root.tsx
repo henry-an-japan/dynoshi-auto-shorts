@@ -12,6 +12,9 @@ export const defaultPilotProps: AnimeShortProps = {
   scriptText:
     'Kya aap soch sakte ho ki ek insaan apni sabse badi takleef ke saamne bhi ruk jaaye? Noelle ne aaj wahi kar dikhaya hai.',
   audioFile: 'voiceover.mp3',
+  // No scene images bundled for the local pilot default → v1 gradient fallback.
+  // CI passes real generated scenes (public/scenes/scene-N.jpg) via props.json.
+  scenes: [],
 };
 
 export const RemotionRoot: React.FC = () => {

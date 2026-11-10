@@ -1,1 +1,291 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsKICBBYnNvbHV0ZUZpbGwsCiAgQXVkaW8sCiAgU2VxdWVuY2UsCiAgaW50ZXJwb2xhdGUsCiAgc3ByaW5nLAogIHN0YXRpY0ZpbGUsCiAgdXNlQ3VycmVudEZyYW1lLAogIHVzZVZpZGVvQ29uZmlnLAp9IGZyb20gJ3JlbW90aW9uJzsKCmV4cG9ydCB0eXBlIEFuaW1lU2hvcnRQcm9wcyA9IHsKICAvKiogU0VPIHRpdGxlIGZvciB0aGUgZGF5J3MgdmlkZW8g4oCUIHNob3duIG9uIHRoZSBvcGVuaW5nIHRpdGxlIGNhcmQuICovCiAgdGl0bGU6IHN0cmluZzsKICAvKiogRnVsbCB2b2ljZW92ZXIgc2NyaXB0IChwbGFpbiB0ZXh0KS4gU3BsaXQgaW50byBjYXB0aW9uIGNodW5rcyBhdXRvbWF0aWNhbGx5LiAqLwogIHNjcmlwdFRleHQ6IHN0cmluZzsKICAvKiogTVAzIGZpbGUgbmFtZSBpbnNpZGUgdGhlIFJlbW90aW9uIHB1YmxpYy8gZm9sZGVyIChnZW5lcmF0ZWQgYnkgZWRnZS10dHMpLiAqLwogIGF1ZGlvRmlsZTogc3RyaW5nOwp9OwoKLyogLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICovCi8qIEhlbHBlcnMgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgKi8KLyogLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICovCgovKiogU3BsaXQgdGhlIHNjcmlwdCBpbnRvIHNob3J0IGNhcHRpb24gY2h1bmtzIG9mIH41IHdvcmRzIGVhY2guICovCmV4cG9ydCBmdW5jdGlvbiBjaHVua1NjcmlwdChzY3JpcHRUZXh0OiBzdHJpbmcsIHdvcmRzUGVyQ2h1bmsgPSA1KTogc3RyaW5nW10gewogIGNvbnN0IHdvcmRzID0gc2NyaXB0VGV4dC5yZXBsYWNlKC9ccysvZywgJyAnKS50cmltKCkuc3BsaXQoJyAnKS5maWx0ZXIoQm9vbGVhbik7CiAgY29uc3QgY2h1bmtzOiBzdHJpbmdbXSA9IFtdOwogIGZvciAobGV0IGkgPSAwOyBpIDwgd29yZHMubGVuZ3RoOyBpICs9IHdvcmRzUGVyQ2h1bmspIHsKICAgIGNodW5rcy5wdXNoKHdvcmRzLnNsaWNlKGksIGkgKyB3b3Jkc1BlckNodW5rKS5qb2luKCcgJykpOwogIH0KICByZXR1cm4gY2h1bmtzLmxlbmd0aCA+IDAgPyBjaHVua3MgOiBbJyddOwp9CgovKiogRGV0ZXJtaW5pc3RpYyBwc2V1ZG8tcmFuZG9tIGZyb20gYSBzZWVkIChzdGFibGUgYWNyb3NzIHJlbmRlcnMpLiAqLwpjb25zdCByYW5kID0gKHNlZWQ6IG51bWJlcikgPT4gewogIGNvbnN0IHggPSBNYXRoLnNpbihzZWVkICogOTk3My4xMykgKiA0Mzc1OC41NDUzOwogIHJldHVybiB4IC0gTWF0aC5mbG9vcih4KTsKfTsKCi8qIEdyYWRpZW50IHNjZW5lIHBhbGV0dGVzIOKAlCBnZW5lcmF0ZWQgdmlzdWFscyBvbmx5LCBubyBhbmltZSBhcnR3b3JrLiAqLwpjb25zdCBQQUxFVFRFUzogQXJyYXk8W3N0cmluZywgc3RyaW5nLCBzdHJpbmddPiA9IFsKICBbJyMxYjEwMzUnLCAnIzRjMWQ5NScsICcjZGIyNzc3J10sCiAgWycjMGIxZTNhJywgJyMxNTVlNzUnLCAnIzBlYTVlOSddLAogIFsnIzJhMGExMicsICcjN2YxZDFkJywgJyNmNTllMGInXSwKICBbJyMwYTI0MTgnLCAnIzA2NWY0NicsICcjMzRkMzk5J10sCiAgWycjMjQxMDMzJywgJyM2ZDI4ZDknLCAnIzM4YmRmOCddLAogIFsnIzMzMTUwNScsICcjOTI0MDBlJywgJyNlZjQ0NDQnXSwKXTsKCmNvbnN0IFNDRU5FX1NFQ09ORFMgPSA5OwoKLyogLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICovCi8qIExheWVycyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgKi8KLyogLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICovCgpjb25zdCBHcmFkaWVudFNjZW5lczogUmVhY3QuRkMgPSAoKSA9PiB7CiAgY29uc3QgZnJhbWUgPSB1c2VDdXJyZW50RnJhbWUoKTsKICBjb25zdCB7ZnBzLCB3aWR0aCwgaGVpZ2h0fSA9IHVzZVZpZGVvQ29uZmlnKCk7CiAgY29uc3QgdCA9IGZyYW1lIC8gZnBzOwogIGNvbnN0IHNjZW5lRmxvYXQgPSB0IC8gU0NFTkVfU0VDT05EUzsKICBjb25zdCBzY2VuZUluZGV4ID0gTWF0aC5mbG9vcihzY2VuZUZsb2F0KTsKICBjb25zdCBibGVuZCA9IE1hdGgubWluKDEsIChzY2VuZUZsb2F0IC0gc2NlbmVJbmRleCkgLyAwLjEyKTsgLy8gcXVpY2sgY3Jvc3NmYWRlIGF0IHNjZW5lIHN0YXJ0CgogIGNvbnN0IHJlbmRlclNjZW5lID0gKGlkeDogbnVtYmVyLCBvcGFjaXR5OiBudW1iZXIpID0+IHsKICAgIGNvbnN0IFtjMSwgYzIsIGMzXSA9IFBBTEVUVEVTW2lkeCAlIFBBTEVUVEVTLmxlbmd0aF07CiAgICAvLyBTbG93IGRyaWZ0IHNvIHRoZSBncmFkaWVudCBpdHNlbGYgZmVlbHMgYWxpdmUuCiAgICBjb25zdCBkcmlmdCA9IGludGVycG9sYXRlKGZyYW1lLCBbMCwgZnBzICogNjBdLCBbMCwgMTQwXSwge2V4dHJhcG9sYXRlUmlnaHQ6ICdleHRlbmQnfSk7CiAgICBjb25zdCBibG9iID0gKGk6IG51bWJlcikgPT4gewogICAgICBjb25zdCBzcGVlZCA9IDAuMTEgKyByYW5kKGlkeCAqIDcgKyBpKSAqIDAuMTI7CiAgICAgIGNvbnN0IGN4ID0gNTAgKyA0MiAqIE1hdGguc2luKHQgKiBzcGVlZCArIGlkeCAqIDIuMSArIGkgKiAyLjQpOwogICAgICBjb25zdCBjeSA9IDUwICsgNDIgKiBNYXRoLmNvcyh0ICogc3BlZWQgKiAwLjkgKyBpZHggKiAxLjMgKyBpICogMS43KTsKICAgICAgY29uc3Qgc2l6ZSA9ICgzNCArIHJhbmQoaWR4ICogMTMgKyBpICogMykgKiAzMCkgKiAod2lkdGggLyAxMDApOwogICAgICBjb25zdCBjb2wgPSBbYzIsIGMzLCBjMl1baSAlIDNdOwogICAgICByZXR1cm4gKAogICAgICAgIDxkaXYKICAgICAgICAgIGtleT17aX0KICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgICBsZWZ0OiAoY3ggLyAxMDApICogd2lkdGggLSBzaXplIC8gMiwKICAgICAgICAgICAgdG9wOiAoY3kgLyAxMDApICogaGVpZ2h0IC0gc2l6ZSAvIDIsCiAgICAgICAgICAgIHdpZHRoOiBzaXplLAogICAgICAgICAgICBoZWlnaHQ6IHNpemUsCiAgICAgICAgICAgIGJvcmRlclJhZGl1czogJzUwJScsCiAgICAgICAgICAgIGJhY2tncm91bmQ6IGByYWRpYWwtZ3JhZGllbnQoY2lyY2xlLCAke2NvbH1jYyAwJSwgdHJhbnNwYXJlbnQgNzAlKWAsCiAgICAgICAgICAgIGZpbHRlcjogJ2JsdXIoMzBweCknLAogICAgICAgICAgfX0KICAgICAgICAvPgogICAgICApOwogICAgfTsKICAgIHJldHVybiAoCiAgICAgIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3tvcGFjaXR5LCBiYWNrZ3JvdW5kQ29sb3I6IGMxfX0+CiAgICAgICAgPEFic29sdXRlRmlsbAogICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgYmFja2dyb3VuZDogYGxpbmVhci1ncmFkaWVudCgkezE1MCArIGRyaWZ0fWRlZywgJHtjMX0gMCUsICR7YzJ9IDU4JSwgJHtjMX0gMTAwJSlgLAogICAgICAgICAgfX0KICAgICAgICAvPgogICAgICAgIHtbMCwgMSwgMl0ubWFwKGJsb2IpfQogICAgICAgIHsvKiBzdWJ0bGUgdmlnbmV0dGUgKi99CiAgICAgICAgPEFic29sdXRlRmlsbAogICAgICAgICAgc3R5bGU9e3tiYWNrZ3JvdW5kOiAncmFkaWFsLWdyYWRpZW50KGVsbGlwc2UgYXQgY2VudGVyLCB0cmFuc3BhcmVudCA1NSUsIHJnYmEoMCwwLDAsMC41KSAxMDAlKSd9fQogICAgICAgIC8+CiAgICAgIDwvQWJzb2x1dGVGaWxsPgogICAgKTsKICB9OwoKICByZXR1cm4gKAogICAgPEFic29sdXRlRmlsbD4KICAgICAge3JlbmRlclNjZW5lKHNjZW5lSW5kZXgsIDEpfQogICAgICB7YmxlbmQgPCAxID8gcmVuZGVyU2NlbmUoc2NlbmVJbmRleCArIDEsIGJsZW5kKSA6IG51bGx9CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9OwoKY29uc3QgVGl0bGVDYXJkOiBSZWFjdC5GQzx7dGl0bGU6IHN0cmluZ30+ID0gKHt0aXRsZX0pID0+IHsKICBjb25zdCBmcmFtZSA9IHVzZUN1cnJlbnRGcmFtZSgpOwogIGNvbnN0IHtmcHMsIHdpZHRofSA9IHVzZVZpZGVvQ29uZmlnKCk7CiAgY29uc3QgZHVyID0gMiAqIGZwczsKICBjb25zdCBpblBvcCA9IHNwcmluZyh7ZnJhbWUsIGZwcywgY29uZmlnOiB7ZGFtcGluZzogMTYsIHN0aWZmbmVzczogMTIwfX0pOwogIGNvbnN0IG91dE9wYWNpdHkgPSBpbnRlcnBvbGF0ZShmcmFtZSwgW2R1ciAtIDEyLCBkdXJdLCBbMSwgMF0sIHsKICAgIGV4dHJhcG9sYXRlTGVmdDogJ2NsYW1wJywKICAgIGV4dHJhcG9sYXRlUmlnaHQ6ICdjbGFtcCcsCiAgfSk7CiAgcmV0dXJuICgKICAgIDxBYnNvbHV0ZUZpbGwKICAgICAgc3R5bGU9e3sKICAgICAgICBqdXN0aWZ5Q29udGVudDogJ2NlbnRlcicsCiAgICAgICAgYWxpZ25JdGVtczogJ2NlbnRlcicsCiAgICAgICAgcGFkZGluZzogd2lkdGggKiAwLjA3LAogICAgICAgIG9wYWNpdHk6IG91dE9wYWNpdHksCiAgICAgIH19CiAgICA+CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgdHJhbnNmb3JtOiBgc2NhbGUoJHswLjg1ICsgaW5Qb3AgKiAwLjE1fSlgLAogICAgICAgICAgYmFja2dyb3VuZDogJ3JnYmEoMCwwLDAsMC41NSknLAogICAgICAgICAgYm9yZGVyOiAnMnB4IHNvbGlkIHJnYmEoMjU1LDI1NSwyNTUsMC4yNSknLAogICAgICAgICAgYm9yZGVyUmFkaXVzOiAyOCwKICAgICAgICAgIHBhZGRpbmc6IGAke3dpZHRoICogMC4wNX1weCAke3dpZHRoICogMC4wNDV9cHhgLAogICAgICAgICAgdGV4dEFsaWduOiAnY2VudGVyJywKICAgICAgICB9fQogICAgICA+CiAgICAgICAgPGRpdgogICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgY29sb3I6ICcjZmJiZjI0JywKICAgICAgICAgICAgZm9udEZhbWlseTogJ0FyaWFsLCAiRGVqYVZ1IFNhbnMiLCBzYW5zLXNlcmlmJywKICAgICAgICAgICAgZm9udFdlaWdodDogODAwLAogICAgICAgICAgICBsZXR0ZXJTcGFjaW5nOiA0LAogICAgICAgICAgICBmb250U2l6ZTogd2lkdGggKiAwLjAzMiwKICAgICAgICAgICAgbWFyZ2luQm90dG9tOiAxOCwKICAgICAgICAgIH19CiAgICAgICAgPgogICAgICAgICAgRFlOT1NISSDigKIgQU5JTUUgSElOREkKICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBjb2xvcjogJ3doaXRlJywKICAgICAgICAgICAgZm9udEZhbWlseTogJ0FyaWFsLCAiRGVqYVZ1IFNhbnMiLCBzYW5zLXNlcmlmJywKICAgICAgICAgICAgZm9udFdlaWdodDogOTAwLAogICAgICAgICAgICBmb250U2l6ZTogd2lkdGggKiAwLjA2MiwKICAgICAgICAgICAgbGluZUhlaWdodDogMS4yNSwKICAgICAgICAgIH19CiAgICAgICAgPgogICAgICAgICAge3RpdGxlfQogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvQWJzb2x1dGVGaWxsPgogICk7Cn07Cgpjb25zdCBDYXB0aW9uczogUmVhY3QuRkM8e2NodW5rczogc3RyaW5nW119PiA9ICh7Y2h1bmtzfSkgPT4gewogIGNvbnN0IGZyYW1lID0gdXNlQ3VycmVudEZyYW1lKCk7CiAgY29uc3Qge2Zwcywgd2lkdGgsIGR1cmF0aW9uSW5GcmFtZXN9ID0gdXNlVmlkZW9Db25maWcoKTsKCiAgLy8gQ2FwdGlvbiB0aW1pbmc6IGNodW5rcyBkaXN0cmlidXRlZCBhY3Jvc3MgdGhlIGZ1bGwgZHVyYXRpb24gaW4KICAvLyBwcm9wb3J0aW9uIHRvIHRoZWlyIHdvcmQgY291bnRzIChzcGVlY2ggcmF0ZSBpcyByb3VnaGx5IHVuaWZvcm0pLgogIGNvbnN0IGNvdW50cyA9IGNodW5rcy5tYXAoKGMpID0+IGMuc3BsaXQoJyAnKS5sZW5ndGgpOwogIGNvbnN0IHRvdGFsID0gY291bnRzLnJlZHVjZSgoYSwgYikgPT4gYSArIGIsIDApIHx8IDE7CiAgbGV0IGFjYyA9IDA7CiAgY29uc3QgcmFuZ2VzID0gY291bnRzLm1hcCgobikgPT4gewogICAgY29uc3QgZnJvbSA9IE1hdGgucm91bmQoKGFjYyAvIHRvdGFsKSAqIGR1cmF0aW9uSW5GcmFtZXMpOwogICAgYWNjICs9IG47CiAgICBjb25zdCB0byA9IE1hdGgucm91bmQoKGFjYyAvIHRvdGFsKSAqIGR1cmF0aW9uSW5GcmFtZXMpOwogICAgcmV0dXJuIHtmcm9tLCB0b307CiAgfSk7CiAgY29uc3QgYWN0aXZlSWR4ID0gcmFuZ2VzLmZpbmRJbmRleCgocikgPT4gZnJhbWUgPj0gci5mcm9tICYmIGZyYW1lIDwgci50byk7CiAgaWYgKGFjdGl2ZUlkeCA8IDApIHJldHVybiBudWxsOwogIGNvbnN0IHtmcm9tfSA9IHJhbmdlc1thY3RpdmVJZHhdOwogIGNvbnN0IHBvcCA9IHNwcmluZyh7ZnJhbWU6IGZyYW1lIC0gZnJvbSwgZnBzLCBjb25maWc6IHtkYW1waW5nOiAxOCwgc3RpZmZuZXNzOiAyMDB9fSk7CgogIHJldHVybiAoCiAgICA8ZGl2CiAgICAgIHN0eWxlPXt7CiAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgbGVmdDogMCwKICAgICAgICByaWdodDogMCwKICAgICAgICBib3R0b206ICcxNiUnLAogICAgICAgIGRpc3BsYXk6ICdmbGV4JywKICAgICAgICBqdXN0aWZ5Q29udGVudDogJ2NlbnRlcicsCiAgICAgICAgcGFkZGluZzogYDAgJHt3aWR0aCAqIDAuMDZ9cHhgLAogICAgICB9fQogICAgPgogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHRyYW5zZm9ybTogYHNjYWxlKCR7MC45MiArIHBvcCAqIDAuMDh9KWAsCiAgICAgICAgICBiYWNrZ3JvdW5kOiAncmdiYSgwLDAsMCwwLjYyKScsCiAgICAgICAgICBib3JkZXJSYWRpdXM6IDIwLAogICAgICAgICAgcGFkZGluZzogYCR7d2lkdGggKiAwLjAyOH1weCAke3dpZHRoICogMC4wNH1weGAsCiAgICAgICAgICBtYXhXaWR0aDogJzEwMCUnLAogICAgICAgIH19CiAgICAgID4KICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBjb2xvcjogJ3doaXRlJywKICAgICAgICAgICAgZm9udEZhbWlseTogJ0FyaWFsLCAiRGVqYVZ1IFNhbnMiLCBzYW5zLXNlcmlmJywKICAgICAgICAgICAgZm9udFdlaWdodDogODAwLAogICAgICAgICAgICBmb250U2l6ZTogd2lkdGggKiAwLjA1NSwKICAgICAgICAgICAgbGluZUhlaWdodDogMS4zLAogICAgICAgICAgICB0ZXh0QWxpZ246ICdjZW50ZXInLAogICAgICAgICAgICB0ZXh0U2hhZG93OiAnMCAzcHggMTBweCByZ2JhKDAsMCwwLDAuOCknLAogICAgICAgICAgfX0KICAgICAgICA+CiAgICAgICAgICB7Y2h1bmtzW2FjdGl2ZUlkeF19CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgKTsKfTsKCmNvbnN0IFByb2dyZXNzQmFyOiBSZWFjdC5GQyA9ICgpID0+IHsKICBjb25zdCBmcmFtZSA9IHVzZUN1cnJlbnRGcmFtZSgpOwogIGNvbnN0IHtkdXJhdGlvbkluRnJhbWVzfSA9IHVzZVZpZGVvQ29uZmlnKCk7CiAgY29uc3QgcGN0ID0gTWF0aC5taW4oMTAwLCAoZnJhbWUgLyBNYXRoLm1heCgxLCBkdXJhdGlvbkluRnJhbWVzKSkgKiAxMDApOwogIHJldHVybiAoCiAgICA8ZGl2IHN0eWxlPXt7cG9zaXRpb246ICdhYnNvbHV0ZScsIGxlZnQ6IDAsIHJpZ2h0OiAwLCBib3R0b206IDAsIGhlaWdodDogMTIsIGJhY2tncm91bmQ6ICdyZ2JhKDI1NSwyNTUsMjU1LDAuMTUpJ319PgogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIGhlaWdodDogJzEwMCUnLAogICAgICAgICAgd2lkdGg6IGAke3BjdH0lYCwKICAgICAgICAgIGJhY2tncm91bmQ6ICdsaW5lYXItZ3JhZGllbnQoOTBkZWcsICNmNTllMGIsICNlZjQ0NDQsICNkYjI3NzcpJywKICAgICAgICB9fQogICAgICAvPgogICAgPC9kaXY+CiAgKTsKfTsKCmNvbnN0IFdhdGVybWFyazogUmVhY3QuRkMgPSAoKSA9PiB7CiAgY29uc3Qge3dpZHRofSA9IHVzZVZpZGVvQ29uZmlnKCk7CiAgcmV0dXJuICgKICAgIDxkaXYKICAgICAgc3R5bGU9e3sKICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICB0b3A6IHdpZHRoICogMC4wNDUsCiAgICAgICAgbGVmdDogMCwKICAgICAgICByaWdodDogMCwKICAgICAgICB0ZXh0QWxpZ246ICdjZW50ZXInLAogICAgICAgIGNvbG9yOiAncmdiYSgyNTUsMjU1LDI1NSwwLjg1KScsCiAgICAgICAgZm9udEZhbWlseTogJ0FyaWFsLCAiRGVqYVZ1IFNhbnMiLCBzYW5zLXNlcmlmJywKICAgICAgICBmb250V2VpZ2h0OiA4MDAsCiAgICAgICAgbGV0dGVyU3BhY2luZzogNiwKICAgICAgICBmb250U2l6ZTogd2lkdGggKiAwLjAzNCwKICAgICAgICB0ZXh0U2hhZG93OiAnMCAycHggOHB4IHJnYmEoMCwwLDAsMC43KScsCiAgICAgIH19CiAgICA+CiAgICAgIERZTk9TSEkKICAgIDwvZGl2PgogICk7Cn07CgovKiAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gKi8KLyogQ29tcG9zaXRpb24gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAqLwovKiAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gKi8KCmV4cG9ydCBjb25zdCBBbmltZVNob3J0OiBSZWFjdC5GQzxBbmltZVNob3J0UHJvcHM+ID0gKHt0aXRsZSwgc2NyaXB0VGV4dCwgYXVkaW9GaWxlfSkgPT4gewogIGNvbnN0IHtmcHN9ID0gdXNlVmlkZW9Db25maWcoKTsKICBjb25zdCBjaHVua3MgPSBjaHVua1NjcmlwdChzY3JpcHRUZXh0KTsKICByZXR1cm4gKAogICAgPEFic29sdXRlRmlsbCBzdHlsZT17e2JhY2tncm91bmRDb2xvcjogJyMwMDAnfX0+CiAgICAgIDxBdWRpbyBzcmM9e3N0YXRpY0ZpbGUoYXVkaW9GaWxlKX0gLz4KICAgICAgPEdyYWRpZW50U2NlbmVzIC8+CiAgICAgIDxXYXRlcm1hcmsgLz4KICAgICAgPENhcHRpb25zIGNodW5rcz17Y2h1bmtzfSAvPgogICAgICB7LyogVGl0bGUgY2FyZCBvdmVybGF5cyB0aGUgZmlyc3QgfjIgc2Vjb25kcyB3aGlsZSB0aGUgdm9pY2VvdmVyIHN0YXJ0cy4gKi99CiAgICAgIDxTZXF1ZW5jZSBmcm9tPXswfSBkdXJhdGlvbkluRnJhbWVzPXsyICogZnBzfT4KICAgICAgICA8VGl0bGVDYXJkIHRpdGxlPXt0aXRsZX0gLz4KICAgICAgPC9TZXF1ZW5jZT4KICAgICAgPFByb2dyZXNzQmFyIC8+CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9Owo=
+import React from 'react';
+import {
+  AbsoluteFill,
+  Audio,
+  Sequence,
+  interpolate,
+  spring,
+  staticFile,
+  useCurrentFrame,
+  useVideoConfig,
+} from 'remotion';
+
+export type AnimeShortProps = {
+  /** SEO title for the day's video — shown on the opening title card. */
+  title: string;
+  /** Full voiceover script (plain text). Split into caption chunks automatically. */
+  scriptText: string;
+  /** MP3 file name inside the Remotion public/ folder (generated by edge-tts). */
+  audioFile: string;
+};
+
+/* ------------------------------------------------------------------ */
+/* Helpers                                                             */
+/* ------------------------------------------------------------------ */
+
+/** Split the script into short caption chunks of ~5 words each. */
+export function chunkScript(scriptText: string, wordsPerChunk = 5): string[] {
+  const words = scriptText.replace(/\s+/g, ' ').trim().split(' ').filter(Boolean);
+  const chunks: string[] = [];
+  for (let i = 0; i < words.length; i += wordsPerChunk) {
+    chunks.push(words.slice(i, i + wordsPerChunk).join(' '));
+  }
+  return chunks.length > 0 ? chunks : [''];
+}
+
+/** Deterministic pseudo-random from a seed (stable across renders). */
+const rand = (seed: number) => {
+  const x = Math.sin(seed * 9973.13) * 43758.5453;
+  return x - Math.floor(x);
+};
+
+/* Gradient scene palettes — generated visuals only, no anime artwork. */
+const PALETTES: Array<[string, string, string]> = [
+  ['#1b1035', '#4c1d95', '#db2777'],
+  ['#0b1e3a', '#155e75', '#0ea5e9'],
+  ['#2a0a12', '#7f1d1d', '#f59e0b'],
+  ['#0a2418', '#065f46', '#34d399'],
+  ['#241033', '#6d28d9', '#38bdf8'],
+  ['#331505', '#92400e', '#ef4444'],
+];
+
+const SCENE_SECONDS = 9;
+
+/* ------------------------------------------------------------------ */
+/* Layers                                                              */
+/* ------------------------------------------------------------------ */
+
+const GradientScenes: React.FC = () => {
+  const frame = useCurrentFrame();
+  const {fps, width, height} = useVideoConfig();
+  const t = frame / fps;
+  const sceneFloat = t / SCENE_SECONDS;
+  const sceneIndex = Math.floor(sceneFloat);
+  const blend = Math.min(1, (sceneFloat - sceneIndex) / 0.12); // quick crossfade at scene start
+
+  const renderScene = (idx: number, opacity: number) => {
+    const [c1, c2, c3] = PALETTES[idx % PALETTES.length];
+    // Slow drift so the gradient itself feels alive.
+    const drift = interpolate(frame, [0, fps * 60], [0, 140], {extrapolateRight: 'extend'});
+    const blob = (i: number) => {
+      const speed = 0.11 + rand(idx * 7 + i) * 0.12;
+      const cx = 50 + 42 * Math.sin(t * speed + idx * 2.1 + i * 2.4);
+      const cy = 50 + 42 * Math.cos(t * speed * 0.9 + idx * 1.3 + i * 1.7);
+      const size = (34 + rand(idx * 13 + i * 3) * 30) * (width / 100);
+      const col = [c2, c3, c2][i % 3];
+      return (
+        <div
+          key={i}
+          style={{
+            position: 'absolute',
+            left: (cx / 100) * width - size / 2,
+            top: (cy / 100) * height - size / 2,
+            width: size,
+            height: size,
+            borderRadius: '50%',
+            background: `radial-gradient(circle, ${col}cc 0%, transparent 70%)`,
+            filter: 'blur(30px)',
+          }}
+        />
+      );
+    };
+    return (
+      <AbsoluteFill style={{opacity, backgroundColor: c1}}>
+        <AbsoluteFill
+          style={{
+            background: `linear-gradient(${150 + drift}deg, ${c1} 0%, ${c2} 58%, ${c1} 100%)`,
+          }}
+        />
+        {[0, 1, 2].map(blob)}
+        {/* subtle vignette */}
+        <AbsoluteFill
+          style={{background: 'radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.5) 100%)'}}
+        />
+      </AbsoluteFill>
+    );
+  };
+
+  return (
+    <AbsoluteFill>
+      {renderScene(sceneIndex, 1)}
+      {blend < 1 ? renderScene(sceneIndex + 1, blend) : null}
+    </AbsoluteFill>
+  );
+};
+
+const TitleCard: React.FC<{title: string}> = ({title}) => {
+  const frame = useCurrentFrame();
+  const {fps, width} = useVideoConfig();
+  const dur = 2 * fps;
+  const inPop = spring({frame, fps, config: {damping: 16, stiffness: 120}});
+  const outOpacity = interpolate(frame, [dur - 12, dur], [1, 0], {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
+  return (
+    <AbsoluteFill
+      style={{
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: width * 0.07,
+        opacity: outOpacity,
+      }}
+    >
+      <div
+        style={{
+          transform: `scale(${0.85 + inPop * 0.15})`,
+          background: 'rgba(0,0,0,0.55)',
+          border: '2px solid rgba(255,255,255,0.25)',
+          borderRadius: 28,
+          padding: `${width * 0.05}px ${width * 0.045}px`,
+          textAlign: 'center',
+        }}
+      >
+        <div
+          style={{
+            color: '#fbbf24',
+            fontFamily: 'Arial, "DejaVu Sans", sans-serif',
+            fontWeight: 800,
+            letterSpacing: 4,
+            fontSize: width * 0.032,
+            marginBottom: 18,
+          }}
+        >
+          DYNOSHI • ANIME HINDI
+        </div>
+        <div
+          style={{
+            color: 'white',
+            fontFamily: 'Arial, "DejaVu Sans", sans-serif',
+            fontWeight: 900,
+            fontSize: width * 0.062,
+            lineHeight: 1.25,
+          }}
+        >
+          {title}
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+const Captions: React.FC<{chunks: string[]}> = ({chunks}) => {
+  const frame = useCurrentFrame();
+  const {fps, width, durationInFrames} = useVideoConfig();
+
+  // Caption timing: chunks distributed across the full duration in
+  // proportion to their word counts (speech rate is roughly uniform).
+  const counts = chunks.map((c) => c.split(' ').length);
+  const total = counts.reduce((a, b) => a + b, 0) || 1;
+  let acc = 0;
+  const ranges = counts.map((n) => {
+    const from = Math.round((acc / total) * durationInFrames);
+    acc += n;
+    const to = Math.round((acc / total) * durationInFrames);
+    return {from, to};
+  });
+  const activeIdx = ranges.findIndex((r) => frame >= r.from && frame < r.to);
+  if (activeIdx < 0) return null;
+  const {from} = ranges[activeIdx];
+  const pop = spring({frame: frame - from, fps, config: {damping: 18, stiffness: 200}});
+
+  return (
+    <div
+      style={{
+        position: 'absolute',
+        left: 0,
+        right: 0,
+        bottom: '16%',
+        display: 'flex',
+        justifyContent: 'center',
+        padding: `0 ${width * 0.06}px`,
+      }}
+    >
+      <div
+        style={{
+          transform: `scale(${0.92 + pop * 0.08})`,
+          background: 'rgba(0,0,0,0.62)',
+          borderRadius: 20,
+          padding: `${width * 0.028}px ${width * 0.04}px`,
+          maxWidth: '100%',
+        }}
+      >
+        <div
+          style={{
+            color: 'white',
+            fontFamily: 'Arial, "DejaVu Sans", sans-serif',
+            fontWeight: 800,
+            fontSize: width * 0.055,
+            lineHeight: 1.3,
+            textAlign: 'center',
+            textShadow: '0 3px 10px rgba(0,0,0,0.8)',
+          }}
+        >
+          {chunks[activeIdx]}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const ProgressBar: React.FC = () => {
+  const frame = useCurrentFrame();
+  const {durationInFrames} = useVideoConfig();
+  const pct = Math.min(100, (frame / Math.max(1, durationInFrames)) * 100);
+  return (
+    <div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: 12, background: 'rgba(255,255,255,0.15)'}}>
+      <div
+        style={{
+          height: '100%',
+          width: `${pct}%`,
+          background: 'linear-gradient(90deg, #f59e0b, #ef4444, #db2777)',
+        }}
+      />
+    </div>
+  );
+};
+
+const Watermark: React.FC = () => {
+  const {width} = useVideoConfig();
+  return (
+    <div
+      style={{
+        position: 'absolute',
+        top: width * 0.045,
+        left: 0,
+        right: 0,
+        textAlign: 'center',
+        color: 'rgba(255,255,255,0.85)',
+        fontFamily: 'Arial, "DejaVu Sans", sans-serif',
+        fontWeight: 800,
+        letterSpacing: 6,
+        fontSize: width * 0.034,
+        textShadow: '0 2px 8px rgba(0,0,0,0.7)',
+      }}
+    >
+      DYNOSHI
+    </div>
+  );
+};
+
+/* ------------------------------------------------------------------ */
+/* Composition                                                         */
+/* ------------------------------------------------------------------ */
+
+export const AnimeShort: React.FC<AnimeShortProps> = ({title, scriptText, audioFile}) => {
+  const {fps} = useVideoConfig();
+  const chunks = chunkScript(scriptText);
+  return (
+    <AbsoluteFill style={{backgroundColor: '#000'}}>
+      <Audio src={staticFile(audioFile)} />
+      <GradientScenes />
+      <Watermark />
+      <Captions chunks={chunks} />
+      {/* Title card overlays the first ~2 seconds while the voiceover starts. */}
+      <Sequence from={0} durationInFrames={2 * fps}>
+        <TitleCard title={title} />
+      </Sequence>
+      <ProgressBar />
+    </AbsoluteFill>
+  );
+};
